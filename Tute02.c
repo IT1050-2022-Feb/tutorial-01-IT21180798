@@ -16,9 +16,22 @@ Amount = 20 x 50 = 1000
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
-#include <stdio.h>
-
-int main() {
-  
-  return 0;
-}
+#include<stdio.h>
+int main(void)
+//start main function
+{
+	int distance,amo;
+	
+	printf("Enter distance traval(Km):");
+	scanf("%d",&distance);
+	
+	if(distance<30)
+	{
+		amo=distance*50;
+	}
+	else
+	{
+		amo=30*50+(distance-30)*40;
+	}
+	printf("\nAmount to be paid is %d",amo);
+}//end main function
